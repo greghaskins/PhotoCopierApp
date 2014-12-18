@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  PocketTelegraph
-//
-//  Created by Greg on 12/17/14.
-//  Copyright (c) 2014 Greg. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
