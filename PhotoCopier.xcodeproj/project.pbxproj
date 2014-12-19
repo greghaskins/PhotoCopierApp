@@ -12,9 +12,10 @@
 		377CCEE01A4201D800F68EF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 377CCEDE1A4201D800F68EF4 /* Main.storyboard */; };
 		377CCEE21A4201D900F68EF4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 377CCEE11A4201D900F68EF4 /* Images.xcassets */; };
 		377CCEE51A4201D900F68EF4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 377CCEE31A4201D900F68EF4 /* LaunchScreen.xib */; };
-		377CCEF11A4201D900F68EF4 /* PocketTelegraphTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377CCEF01A4201D900F68EF4 /* PocketTelegraphTests.swift */; };
+		377CCEF11A4201D900F68EF4 /* PhotoCopierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377CCEF01A4201D900F68EF4 /* PhotoCopierTests.swift */; };
 		377CCF181A42083A00F68EF4 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377CCF021A4207FA00F68EF4 /* Quick.framework */; };
 		377CCF191A42083F00F68EF4 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377CCF111A42080900F68EF4 /* Nimble.framework */; };
+		37CF36681A43611600643516 /* VibrationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CF36671A43611600643516 /* VibrationSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,7 +24,7 @@
 			containerPortal = 377CCECD1A4201D700F68EF4 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 377CCED41A4201D800F68EF4;
-			remoteInfo = PocketTelegraph;
+			remoteInfo = PhotoCopier;
 		};
 		377CCF011A4207FA00F68EF4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -84,18 +85,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		377CCED51A4201D800F68EF4 /* PocketTelegraph.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PocketTelegraph.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		377CCED51A4201D800F68EF4 /* PhotoCopier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoCopier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		377CCED91A4201D800F68EF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		377CCEDA1A4201D800F68EF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		377CCEDC1A4201D800F68EF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		377CCEDF1A4201D800F68EF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		377CCEE11A4201D900F68EF4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		377CCEE41A4201D900F68EF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		377CCEEA1A4201D900F68EF4 /* PocketTelegraphTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PocketTelegraphTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		377CCEEA1A4201D900F68EF4 /* PhotoCopierTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoCopierTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		377CCEEF1A4201D900F68EF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		377CCEF01A4201D900F68EF4 /* PocketTelegraphTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketTelegraphTests.swift; sourceTree = "<group>"; };
+		377CCEF01A4201D900F68EF4 /* PhotoCopierTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCopierTests.swift; sourceTree = "<group>"; };
 		377CCEFA1A4207F900F68EF4 /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = Vendor/Quick/Quick.xcodeproj; sourceTree = SOURCE_ROOT; };
 		377CCF091A42080800F68EF4 /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = Vendor/Nimble/Nimble.xcodeproj; sourceTree = SOURCE_ROOT; };
+		37CF36671A43611600643516 /* VibrationSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VibrationSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,8 +123,8 @@
 		377CCECC1A4201D700F68EF4 = {
 			isa = PBXGroup;
 			children = (
-				377CCED71A4201D800F68EF4 /* PocketTelegraph */,
-				377CCEED1A4201D900F68EF4 /* PocketTelegraphTests */,
+				377CCED71A4201D800F68EF4 /* PhotoCopier */,
+				377CCEED1A4201D900F68EF4 /* PhotoCopierTests */,
 				377CCED61A4201D800F68EF4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -130,13 +132,13 @@
 		377CCED61A4201D800F68EF4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				377CCED51A4201D800F68EF4 /* PocketTelegraph.app */,
-				377CCEEA1A4201D900F68EF4 /* PocketTelegraphTests.xctest */,
+				377CCED51A4201D800F68EF4 /* PhotoCopier.app */,
+				377CCEEA1A4201D900F68EF4 /* PhotoCopierTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		377CCED71A4201D800F68EF4 /* PocketTelegraph */ = {
+		377CCED71A4201D800F68EF4 /* PhotoCopier */ = {
 			isa = PBXGroup;
 			children = (
 				377CCEDA1A4201D800F68EF4 /* AppDelegate.swift */,
@@ -146,7 +148,7 @@
 				377CCEE31A4201D900F68EF4 /* LaunchScreen.xib */,
 				377CCED81A4201D800F68EF4 /* Supporting Files */,
 			);
-			path = PocketTelegraph;
+			path = PhotoCopier;
 			sourceTree = "<group>";
 		};
 		377CCED81A4201D800F68EF4 /* Supporting Files */ = {
@@ -157,15 +159,16 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		377CCEED1A4201D900F68EF4 /* PocketTelegraphTests */ = {
+		377CCEED1A4201D900F68EF4 /* PhotoCopierTests */ = {
 			isa = PBXGroup;
 			children = (
 				377CCF091A42080800F68EF4 /* Nimble.xcodeproj */,
 				377CCEFA1A4207F900F68EF4 /* Quick.xcodeproj */,
-				377CCEF01A4201D900F68EF4 /* PocketTelegraphTests.swift */,
+				377CCEF01A4201D900F68EF4 /* PhotoCopierTests.swift */,
 				377CCEEE1A4201D900F68EF4 /* Supporting Files */,
+				37CF36671A43611600643516 /* VibrationSpec.swift */,
 			);
-			path = PocketTelegraphTests;
+			path = PhotoCopierTests;
 			sourceTree = "<group>";
 		};
 		377CCEEE1A4201D900F68EF4 /* Supporting Files */ = {
@@ -201,9 +204,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		377CCED41A4201D800F68EF4 /* PocketTelegraph */ = {
+		377CCED41A4201D800F68EF4 /* PhotoCopier */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 377CCEF41A4201D900F68EF4 /* Build configuration list for PBXNativeTarget "PocketTelegraph" */;
+			buildConfigurationList = 377CCEF41A4201D900F68EF4 /* Build configuration list for PBXNativeTarget "PhotoCopier" */;
 			buildPhases = (
 				377CCED11A4201D800F68EF4 /* Sources */,
 				377CCED21A4201D800F68EF4 /* Frameworks */,
@@ -213,14 +216,14 @@
 			);
 			dependencies = (
 			);
-			name = PocketTelegraph;
-			productName = PocketTelegraph;
-			productReference = 377CCED51A4201D800F68EF4 /* PocketTelegraph.app */;
+			name = PhotoCopier;
+			productName = PhotoCopier;
+			productReference = 377CCED51A4201D800F68EF4 /* PhotoCopier.app */;
 			productType = "com.apple.product-type.application";
 		};
-		377CCEE91A4201D900F68EF4 /* PocketTelegraphTests */ = {
+		377CCEE91A4201D900F68EF4 /* PhotoCopierTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 377CCEF71A4201D900F68EF4 /* Build configuration list for PBXNativeTarget "PocketTelegraphTests" */;
+			buildConfigurationList = 377CCEF71A4201D900F68EF4 /* Build configuration list for PBXNativeTarget "PhotoCopierTests" */;
 			buildPhases = (
 				377CCEE61A4201D900F68EF4 /* Sources */,
 				377CCEE71A4201D900F68EF4 /* Frameworks */,
@@ -231,9 +234,9 @@
 			dependencies = (
 				377CCEEC1A4201D900F68EF4 /* PBXTargetDependency */,
 			);
-			name = PocketTelegraphTests;
-			productName = PocketTelegraphTests;
-			productReference = 377CCEEA1A4201D900F68EF4 /* PocketTelegraphTests.xctest */;
+			name = PhotoCopierTests;
+			productName = PhotoCopierTests;
+			productReference = 377CCEEA1A4201D900F68EF4 /* PhotoCopierTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -254,7 +257,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 377CCED01A4201D700F68EF4 /* Build configuration list for PBXProject "PocketTelegraph" */;
+			buildConfigurationList = 377CCED01A4201D700F68EF4 /* Build configuration list for PBXProject "PhotoCopier" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -277,8 +280,8 @@
 			);
 			projectRoot = "";
 			targets = (
-				377CCED41A4201D800F68EF4 /* PocketTelegraph */,
-				377CCEE91A4201D900F68EF4 /* PocketTelegraphTests */,
+				377CCED41A4201D800F68EF4 /* PhotoCopier */,
+				377CCEE91A4201D900F68EF4 /* PhotoCopierTests */,
 			);
 		};
 /* End PBXProject section */
@@ -376,7 +379,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				377CCEF11A4201D900F68EF4 /* PocketTelegraphTests.swift in Sources */,
+				377CCEF11A4201D900F68EF4 /* PhotoCopierTests.swift in Sources */,
+				37CF36681A43611600643516 /* VibrationSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,7 +389,7 @@
 /* Begin PBXTargetDependency section */
 		377CCEEC1A4201D900F68EF4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 377CCED41A4201D800F68EF4 /* PocketTelegraph */;
+			target = 377CCED41A4201D800F68EF4 /* PhotoCopier */;
 			targetProxy = 377CCEEB1A4201D900F68EF4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -491,9 +495,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = PocketTelegraph/Info.plist;
+				INFOPLIST_FILE = PhotoCopier/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PhotoCopier;
 			};
 			name = Debug;
 		};
@@ -501,9 +505,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = PocketTelegraph/Info.plist;
+				INFOPLIST_FILE = PhotoCopier/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PhotoCopier;
 			};
 			name = Release;
 		};
@@ -519,10 +523,10 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = PocketTelegraphTests/Info.plist;
+				INFOPLIST_FILE = PhotoCopierTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PocketTelegraph.app/PocketTelegraph";
+				PRODUCT_NAME = PhotoCopierTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoCopier.app/PhotoCopier";
 			};
 			name = Debug;
 		};
@@ -534,17 +538,17 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = PocketTelegraphTests/Info.plist;
+				INFOPLIST_FILE = PhotoCopierTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PocketTelegraph.app/PocketTelegraph";
+				PRODUCT_NAME = PhotoCopierTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoCopier.app/PhotoCopier";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		377CCED01A4201D700F68EF4 /* Build configuration list for PBXProject "PocketTelegraph" */ = {
+		377CCED01A4201D700F68EF4 /* Build configuration list for PBXProject "PhotoCopier" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				377CCEF21A4201D900F68EF4 /* Debug */,
@@ -553,7 +557,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		377CCEF41A4201D900F68EF4 /* Build configuration list for PBXNativeTarget "PocketTelegraph" */ = {
+		377CCEF41A4201D900F68EF4 /* Build configuration list for PBXNativeTarget "PhotoCopier" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				377CCEF51A4201D900F68EF4 /* Debug */,
@@ -562,7 +566,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		377CCEF71A4201D900F68EF4 /* Build configuration list for PBXNativeTarget "PocketTelegraphTests" */ = {
+		377CCEF71A4201D900F68EF4 /* Build configuration list for PBXNativeTarget "PhotoCopierTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				377CCEF81A4201D900F68EF4 /* Debug */,
