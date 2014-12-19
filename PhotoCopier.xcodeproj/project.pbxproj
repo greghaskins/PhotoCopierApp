@@ -12,10 +12,9 @@
 		377CCEE01A4201D800F68EF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 377CCEDE1A4201D800F68EF4 /* Main.storyboard */; };
 		377CCEE21A4201D900F68EF4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 377CCEE11A4201D900F68EF4 /* Images.xcassets */; };
 		377CCEE51A4201D900F68EF4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 377CCEE31A4201D900F68EF4 /* LaunchScreen.xib */; };
-		377CCEF11A4201D900F68EF4 /* PhotoCopierTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377CCEF01A4201D900F68EF4 /* PhotoCopierTests.swift */; };
 		377CCF181A42083A00F68EF4 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377CCF021A4207FA00F68EF4 /* Quick.framework */; };
 		377CCF191A42083F00F68EF4 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377CCF111A42080900F68EF4 /* Nimble.framework */; };
-		37CF36681A43611600643516 /* VibrationSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CF36671A43611600643516 /* VibrationSpec.swift */; };
+		37CF36681A43611600643516 /* PhotoCopierSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CF36671A43611600643516 /* PhotoCopierSpec.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,10 +93,9 @@
 		377CCEE41A4201D900F68EF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		377CCEEA1A4201D900F68EF4 /* PhotoCopierTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoCopierTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		377CCEEF1A4201D900F68EF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		377CCEF01A4201D900F68EF4 /* PhotoCopierTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCopierTests.swift; sourceTree = "<group>"; };
 		377CCEFA1A4207F900F68EF4 /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = Vendor/Quick/Quick.xcodeproj; sourceTree = SOURCE_ROOT; };
 		377CCF091A42080800F68EF4 /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = Vendor/Nimble/Nimble.xcodeproj; sourceTree = SOURCE_ROOT; };
-		37CF36671A43611600643516 /* VibrationSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VibrationSpec.swift; sourceTree = "<group>"; };
+		37CF36671A43611600643516 /* PhotoCopierSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCopierSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,9 +162,8 @@
 			children = (
 				377CCF091A42080800F68EF4 /* Nimble.xcodeproj */,
 				377CCEFA1A4207F900F68EF4 /* Quick.xcodeproj */,
-				377CCEF01A4201D900F68EF4 /* PhotoCopierTests.swift */,
 				377CCEEE1A4201D900F68EF4 /* Supporting Files */,
-				37CF36671A43611600643516 /* VibrationSpec.swift */,
+				37CF36671A43611600643516 /* PhotoCopierSpec.swift */,
 			);
 			path = PhotoCopierTests;
 			sourceTree = "<group>";
@@ -379,8 +376,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				377CCEF11A4201D900F68EF4 /* PhotoCopierTests.swift in Sources */,
-				37CF36681A43611600643516 /* VibrationSpec.swift in Sources */,
+				37CF36681A43611600643516 /* PhotoCopierSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
