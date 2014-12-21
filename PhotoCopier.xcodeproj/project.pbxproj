@@ -14,6 +14,7 @@
 		377CCEE51A4201D900F68EF4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 377CCEE31A4201D900F68EF4 /* LaunchScreen.xib */; };
 		377CCF181A42083A00F68EF4 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377CCF021A4207FA00F68EF4 /* Quick.framework */; };
 		377CCF191A42083F00F68EF4 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 377CCF111A42080900F68EF4 /* Nimble.framework */; };
+		379896561A46073A00EC9027 /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 379896551A46073A00EC9027 /* Photos.framework */; };
 		37CF36681A43611600643516 /* PhotoCopierSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CF36671A43611600643516 /* PhotoCopierSpec.swift */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +96,7 @@
 		377CCEEF1A4201D900F68EF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		377CCEFA1A4207F900F68EF4 /* Quick.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Quick.xcodeproj; path = Vendor/Quick/Quick.xcodeproj; sourceTree = SOURCE_ROOT; };
 		377CCF091A42080800F68EF4 /* Nimble.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Nimble.xcodeproj; path = Vendor/Nimble/Nimble.xcodeproj; sourceTree = SOURCE_ROOT; };
+		379896551A46073A00EC9027 /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 		37CF36671A43611600643516 /* PhotoCopierSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCopierSpec.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				379896561A46073A00EC9027 /* Photos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,6 +124,7 @@
 		377CCECC1A4201D700F68EF4 = {
 			isa = PBXGroup;
 			children = (
+				379896551A46073A00EC9027 /* Photos.framework */,
 				377CCED71A4201D800F68EF4 /* PhotoCopier */,
 				377CCEED1A4201D900F68EF4 /* PhotoCopierTests */,
 				377CCED61A4201D800F68EF4 /* Products */,
