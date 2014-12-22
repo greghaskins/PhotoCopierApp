@@ -30,8 +30,7 @@ class ViewController: UIViewController {
                     PHPhotoLibrary.sharedPhotoLibrary().performChanges({
                         let image = UIImage(data: imageData)
                         let creationRequest = PHAssetChangeRequest.creationRequestForAssetFromImage(image)
-                        
-                        // TODO metadata like date, location are not yet copied
+                        creationRequest.creationDate = asset.creationDate
                         
                         }, completionHandler: { (success: Bool, error: NSError!) in
                             println("success = \(success)")
