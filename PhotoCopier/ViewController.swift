@@ -26,9 +26,9 @@ class ViewController: UIViewController {
                 let manager = PHImageManager.defaultManager()
                 
                 let requestOptions = PHImageRequestOptions()
-                requestOptions.resizeMode = PHImageRequestOptionsResizeMode.None
-                requestOptions.deliveryMode = PHImageRequestOptionsDeliveryMode.HighQualityFormat
-                requestOptions.version = PHImageRequestOptionsVersion.Current // Or original?
+                requestOptions.resizeMode = .None
+                requestOptions.deliveryMode = .HighQualityFormat
+                requestOptions.version = .Current // Or Original?
                 
                 manager.requestImageDataForAsset(asset, options: requestOptions) {
                     (imageData: NSData!, dataUTI: String!, orientation: UIImageOrientation, info: [NSObject : AnyObject]!) in
@@ -52,9 +52,8 @@ class ViewController: UIViewController {
         let fetchOptions = PHFetchOptions()
         fetchOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: true)]
         
-        let fetchResult = PHAsset.fetchAssetsWithMediaType(PHAssetMediaType.Image, options: fetchOptions)
-        let asset: PHAsset = fetchResult.lastObject as PHAsset
-        return asset
+        let fetchResult = PHAsset.fetchAssetsWithMediaType(.Image, options: fetchOptions)
+        return fetchResult.lastObject as PHAsset
     }
 
 
