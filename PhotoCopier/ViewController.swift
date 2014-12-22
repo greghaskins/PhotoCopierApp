@@ -24,7 +24,13 @@ class ViewController: UIViewController {
                 let asset = self.fetchMostRecentPhotoFromCameraRoll()
                 
                 let manager = PHImageManager.defaultManager()
-                manager.requestImageDataForAsset(asset, options: PHImageRequestOptions()) {
+                
+                let requestOptions = PHImageRequestOptions()
+                requestOptions.resizeMode = PHImageRequestOptionsResizeMode.None
+                requestOptions.deliveryMode = PHImageRequestOptionsDeliveryMode.HighQualityFormat
+                requestOptions.version = PHImageRequestOptionsVersion.Current // Or original?
+                
+                manager.requestImageDataForAsset(asset, options: requestOptions) {
                     (imageData: NSData!, dataUTI: String!, orientation: UIImageOrientation, info: [NSObject : AnyObject]!) in
                     
                     PHPhotoLibrary.sharedPhotoLibrary().performChanges({
