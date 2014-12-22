@@ -21,10 +21,7 @@ class ViewController: UIViewController {
             
             if status == PHAuthorizationStatus.Authorized {
         
-                let fetchOptions = PHFetchOptions()
-                fetchOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: true)]
-                let fetchResult = PHAsset.fetchAssetsWithMediaType(PHAssetMediaType.Image, options: fetchOptions)
-                let asset: PHAsset = fetchResult.lastObject as PHAsset
+                let asset = self.fetchMostRecentPhotoFromCameraRoll()
                 
                 let manager = PHImageManager.defaultManager()
                 manager.requestImageDataForAsset(asset, options: PHImageRequestOptions()) {
@@ -44,6 +41,15 @@ class ViewController: UIViewController {
             }
         });
         
+    }
+    
+    func fetchMostRecentPhotoFromCameraRoll() -> PHAsset {
+        let fetchOptions = PHFetchOptions()
+        fetchOptions.sortDescriptors = [NSSortDescriptor(key: "creationDate", ascending: true)]
+        
+        let fetchResult = PHAsset.fetchAssetsWithMediaType(PHAssetMediaType.Image, options: fetchOptions)
+        let asset: PHAsset = fetchResult.lastObject as PHAsset
+        return asset
     }
 
 
