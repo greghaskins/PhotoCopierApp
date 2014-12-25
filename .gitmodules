@@ -4,6 +4,3 @@
 [submodule "Vendor/Nimble"]
 	path = Vendor/Nimble
 	url = https://github.com/Quick/Nimble
-[submodule "Vendor/MWPhotoBrowser"]
-	path = Vendor/MWPhotoBrowser
-	url = https://github.com/mwaterfall/MWPhotoBrowser
