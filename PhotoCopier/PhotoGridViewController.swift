@@ -9,6 +9,15 @@ class PhotoGridViewController: UICollectionViewController {
 
 }
 
+extension PhotoGridViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        let length = (self.collectionView!.bounds.width - 30) / 4.0;
+        return CGSize(width: length, height: length)
+    }
+
+}
+
 extension PhotoGridViewController: UICollectionViewDataSource {
 
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
