@@ -1,7 +1,11 @@
 import UIKit
 
+let NumberOfColumns = 4;
+
 class PhotoGridViewController: UICollectionViewController {
 
+    @IBOutlet weak var layout: UICollectionViewFlowLayout!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         println("loaded photo grid view controller")
@@ -11,9 +15,12 @@ class PhotoGridViewController: UICollectionViewController {
 
 extension PhotoGridViewController: UICollectionViewDelegateFlowLayout {
     
-    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
-        let length = (self.collectionView!.bounds.width - 30) / 4.0;
-        return CGSize(width: length, height: length)
+    func collectionView(collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout,
+        sizeForItemAtIndexPath indexPath: NSIndexPath) -> CGSize {
+        
+            let widthOfGaps = self.layout.minimumInteritemSpacing * CGFloat(NumberOfColumns - 1)
+            let length = (self.collectionView!.bounds.width - widthOfGaps) / CGFloat(NumberOfColumns);
+            return CGSize(width: length, height: length)
     }
 
 }

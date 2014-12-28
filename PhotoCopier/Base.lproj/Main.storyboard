@@ -12,7 +12,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Lm1-Tl-P1k">
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="Lm1-Tl-P1k">
                             <size key="itemSize" width="100" height="100"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -40,6 +40,9 @@
                         </connections>
                     </collectionView>
                     <navigationItem key="navigationItem" title="Photo Copier" id="7CU-gG-b1a"/>
+                    <connections>
+                        <outlet property="layout" destination="Lm1-Tl-P1k" id="7IK-hZ-M5R"/>
+                    </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pd3-vA-dg3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
