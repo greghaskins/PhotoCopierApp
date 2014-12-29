@@ -5,11 +5,6 @@ let NumberOfColumns = 4;
 class PhotoGridViewController: UICollectionViewController {
 
     @IBOutlet weak var layout: UICollectionViewFlowLayout!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        println("loaded photo grid view controller")
-    }
 
 }
 
